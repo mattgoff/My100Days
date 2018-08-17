@@ -1,4 +1,5 @@
 from collections import Counter
+import pdb
 
 test_text = """ 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu elit nec ex congue mollis non nec nunc. Nunc dignissim congue sodales. Integer eget ultrices purus. Ut nisl ipsum, vehicula vel viverra nec, tempor at libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ut pellentesque est, ut euismod tellus. Ut facilisis ex a tellus ullamcorper semper. Aliquam egestas finibus urna eget mattis. Etiam ante elit, consectetur id nisi vitae, suscipit luctus tortor. Quisque vitae aliquet mi, a tincidunt neque.
@@ -15,3 +16,4 @@ Pellentesque commodo, lacus sed auctor eleifend, diam tortor sodales elit, ac di
 words = test_text.split(" ")
 
 print(Counter(words).most_common(5))
+pdb.set_trace()
